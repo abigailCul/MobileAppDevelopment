@@ -7,26 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="20,194,0,-31">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="271*"/>
+            <ColumnDefinition Width="469*"/>
+        </Grid.ColumnDefinitions>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-           
+        <Image x:Name="Img_Background" HorizontalAlignment="left" Width="1468" Source="images/GameBackground.jpg" RenderTransformOrigin="0.448,0.457" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="-23,-994,0,-718" Grid.ColumnSpan="2"/>
 
-            <TextBlock Text="{x:Bind Name}" VerticalAlignment="Center" Margin="0,0,30,0" FontSize="20" FontWeight="Bold" HorizontalAlignment="Stretch"/>
-        </StackPanel>
-
-            
-
-        <Pivot x:Name="Pivot" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
-
-            <PivotItem x:Name="Game" Header="Game">
-                <GridView x:Name="CardContainer"  Margin="0,35,0,0">
-
-                </GridView>
-
-            </PivotItem>
-
-        </Pivot>
 
     </Grid>
 </Page>

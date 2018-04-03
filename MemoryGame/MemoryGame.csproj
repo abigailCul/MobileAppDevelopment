@@ -95,8 +95,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Cards.cs" />
-    <Compile Include="CardView.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -113,6 +111,7 @@
     <Content Include="images\belle.png" />
     <Content Include="images\cinderella.png" />
     <Content Include="images\elsa.png" />
+    <Content Include="images\GameBackground.jpg" />
     <Content Include="images\jasmin.png" />
     <Content Include="images\mulan.png" />
     <Content Include="images\pocahontas.png" />

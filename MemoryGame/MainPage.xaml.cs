@@ -32,23 +32,17 @@ namespace MemoryGame
         {
 
             this.InitializeComponent();
-            CardCollection = new CardView();
-            Loaded += MainPage_Loaded;
-
-            CardCollection.StartGameButton = "Start game";
-
+           
         }
 
 
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            CardCollection.FillUpGridViews();
 
 
 
         }
 
-        internal CardView CardCollection { get; }
     }
 
 
