@@ -7,14 +7,34 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="20,194,0,-31">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="Grid_Board" Margin="10" MinWidth="500" MinHeight="500"
+              VerticalAlignment="Center" Grid.Row="1" Width="500">
+
+        <Image x:Name="Img_Background" HorizontalAlignment="left" Width="1543" Source="images/GameBackground.jpg" RenderTransformOrigin="0.448,0.457" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="-510,-3405,-1033,-3365" Grid.ColumnSpan="6" Grid.RowSpan="6"/>
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="271*"/>
-            <ColumnDefinition Width="469*"/>
+          <!--  <ColumnDefinition Width="136*"/>
+            <ColumnDefinition Width="25*"/>-->
+
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Image x:Name="Img_Background" HorizontalAlignment="left" Width="1468" Source="images/GameBackground.jpg" RenderTransformOrigin="0.448,0.457" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="-23,-994,0,-718" Grid.ColumnSpan="2"/>
+        <Grid.RowDefinitions>
+         <!--   <RowDefinition Height="35*"></RowDefinition>
+            <RowDefinition Height="437*"></RowDefinition>-->
+
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
 
 
     </Grid>
+
 </Page>

@@ -28,23 +28,13 @@ namespace MemoryGame
 
     public sealed partial class MainPage : Page
     {
+
         public MainPage()
         {
-
-            this.InitializeComponent();
-           
-        }
-
-
-        private void MainPage_Loaded(object sender, RoutedEventArgs e)
-        {
-
-
+            InitializeComponent();
 
         }
 
     }
+}
 
-
-
-    }
