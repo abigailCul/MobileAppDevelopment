@@ -12,6 +12,29 @@
 
         <Image x:Name="Img_Background" HorizontalAlignment="left" Width="1543" Source="images/GameBackground.jpg" RenderTransformOrigin="0.448,0.457" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="-510,-3405,-1033,-3365" Grid.ColumnSpan="6" Grid.RowSpan="6"/>
 
+        <Image x:Name="a1" Source="images/question.png" Grid.Row="0" Grid.Column="0" />
+        <Image x:Name="b1" Source="images/question.png" Grid.Row="0" Grid.Column="1" />
+        <Image x:Name="c1" Source="images/question.png" Grid.Row="0" Grid.Column="2" />
+        <Image x:Name="d1" Source="images/question.png" Grid.Row="0" Grid.Column="3" />
+
+        <Image x:Name="a2" Source="images/question.png" Grid.Row="1" Grid.Column="0" />
+        <Image x:Name="b2" Source="images/question.png" Grid.Row="1" Grid.Column="1" />
+        <Image x:Name="c2" Source="images/question.png" Grid.Row="1" Grid.Column="2" />
+        <Image x:Name="d2" Source="images/question.png" Grid.Row="1" Grid.Column="3" />
+
+        <Image x:Name="A3" Source="images/question.png" Grid.Row="2" Grid.Column="0" />
+        <Image x:Name="B3" Source="images/question.png" Grid.Row="2" Grid.Column="1" />
+        <Image x:Name="C3" Source="images/question.png" Grid.Row="2" Grid.Column="2" />
+        <Image x:Name="D3" Source="images/question.png" Grid.Row="2" Grid.Column="3" />
+
+
+        <Image x:Name="A4" Source="images/question.png" Grid.Row="3" Grid.Column="0" />
+        <Image x:Name="B4" Source="images/question.png" Grid.Row="3" Grid.Column="1"/>
+        <Image x:Name="C4" Source="images/question.png" Grid.Row="3" Grid.Column="2" />
+        <Image x:Name="D4" Source="images/question.png" Grid.Row="3" Grid.Column="3" />
+
+
+
         <Grid.ColumnDefinitions>
           <!--  <ColumnDefinition Width="136*"/>
             <ColumnDefinition Width="25*"/>-->
@@ -23,7 +46,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-         <!--   <RowDefinition Height="35*"></RowDefinition>
+            <!--   <RowDefinition Height="35*"></RowDefinition>
             <RowDefinition Height="437*"></RowDefinition>-->
 
             <RowDefinition></RowDefinition>
@@ -32,8 +55,7 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-
-
+        
 
     </Grid>
 
