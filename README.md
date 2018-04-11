@@ -17,7 +17,7 @@ git push
 ### Download from github:
 For you to download my project you must clone my repository link from the command promp:
 
-git clone "example.github/project"
+git clone https://github.com/abigailCul/MobileAppDevelopment.git
 
 ### You can then run my code using:
 Visual Studio. Then you can run my desktop app from your desktop.
