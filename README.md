@@ -28,14 +28,13 @@ Visual Studio. Then you can run my desktop app from your desktop.
 In my project i used C# and xaml as my designer.
 I used xaml to design my home page using images and a bar button at the bottom to bring you to my game page. 
 In xaml i used image tags to show my image on screen and appBar with button.
-**
+
 <AppBar IsOpen="True" IsSticky="True">
             <StackPanel Orientation="Vertical">
                 <AppBarButton Icon="Play" Label="Play Game" Click="Play_Game" Background="MediumPurple"/>
             </StackPanel>
         </AppBar>
-**
-**
+
 <Image x:Name="Card1_Click" Source="images/question.png" Grid.Row="0" Grid.Column="0" />
 **
 
