@@ -55,36 +55,47 @@ namespace MemoryGame
                    img1.Height = 100;
                     return img1;             
                 case 2:
-                    Image img2 = new Image();
-                    img2.Source = new BitmapImage(new Uri("ms-appx:///images/belle.jpg"));
-                    return img2; ;
+                    img1 = new Image();
+                    img1.Source = new BitmapImage(new Uri("ms-appx:///images/belle.png"));
+                    img1.Width = 100;
+                    img1.Height = 100;
+                    return img1; ;
                 case 3:
-                    Image img3 = new Image();
-                    img3.Source = new BitmapImage(new Uri("ms-appx:///images/cinderella.jpg"));
-                    return img3;
+                    img1 = new Image();
+                    img1.Source = new BitmapImage(new Uri("ms-appx:///images/cinderella.png"));
+                    img1.Width = 100;
+                    img1.Height = 100;
+                    return img1;
                 case 4:
-                    Image img4 = new Image();
-                    img4.Source = new BitmapImage(new Uri("ms-appx:///images/elsajpg"));
-                    return img4;
+                    img1 = new Image();
+                    img1.Source = new BitmapImage(new Uri("ms-appx:///images/elsa.png"));
+                    img1.Width = 100;
+                    img1.Height = 100;
+                    return img1;
                 case 5:
-                    Image img5 = new Image();
-                    img5.Source = new BitmapImage(new Uri("ms-appx:///images/jasmin.jpg"));
-
-                    return img5;
+                    img1 = new Image();
+                    img1.Source = new BitmapImage(new Uri("ms-appx:///images/jasmin.png"));
+                    img1.Width = 100;
+                    img1.Height = 100;
+                    return img1;
                 case 6:
-                    Image img6 = new Image();
-                    img6.Source = new BitmapImage(new Uri("ms-appx:///images/mulan.jpg"));
-
-                    return img6;
+                    img1 = new Image();
+                    img1.Source = new BitmapImage(new Uri("ms-appx:///images/mulan.png"));
+                    img1.Width = 100;
+                    img1.Height = 100;
+                    return img1;
                 case 7:
-                    Image img7 = new Image();
-                    img7.Source = new BitmapImage(new Uri("ms-appx:///images/pochahontas.jpg"));
-
-                    return img7;
+                    img1 = new Image();
+                    img1.Source = new BitmapImage(new Uri("ms-appx:///images/pochahontas.png"));
+                    img1.Width = 100;
+                    img1.Height = 100;
+                    return img1;
                 case 8:
-                    Image img8 = new Image();
-                     img8.Source = new BitmapImage(new Uri("ms-appx:///images/pochahontas.jpg"));
-                    return img8;
+                    img1 = new Image();
+                    img1.Source = new BitmapImage(new Uri("ms-appx:///images/snowWhite.png"));
+                    img1.Width = 100;
+                    img1.Height = 100;
+                    return img1;
                 default:
 
 
