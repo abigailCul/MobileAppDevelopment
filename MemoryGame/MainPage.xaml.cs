@@ -30,15 +30,19 @@ namespace MemoryGame
     public sealed partial class MainPage : Page
     {
 
-
+       
         public MainPage()
         {
-            InitializeComponent();
-
-        }
+            InitializeComponent(); 
 
     }
 
-       
-}
+        public Card Card = new Card();
 
+        private void Play_Game(object sender, RoutedEventArgs e)
+        {
+            Card.Background = ((Brush)App.Current.Resources["ApplicationSecondaryForegroundThemeBrush"]);
+            Card.New(Display);
+        }
+    }
+}
