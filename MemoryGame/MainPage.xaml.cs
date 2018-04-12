@@ -30,18 +30,6 @@ namespace MemoryGame
     public sealed partial class MainPage : Page
     {
 
-        // The popup message.
-        public string msg
-        {
-            get { return (string)GetValue(msgProp); }
-            set { SetValue(msgProp, value); }
-        }
-
-       
-        // Holds the value for the message
-        public static readonly DependencyProperty msgProp =
-            DependencyProperty.Register("message", typeof(string), typeof(MainPage), new PropertyMetadata(""));
-
 
         public MainPage()
         {
