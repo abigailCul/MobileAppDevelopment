@@ -15,7 +15,7 @@
         </AppBar>
     </Page.BottomAppBar>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="Display" Margin="10" MinWidth="500" MinHeight="500"
-              VerticalAlignment="Center" Grid.Row="1" Width="500">
+              VerticalAlignment="Center" Grid.Row="1" Width="500" BorderBrush="HotPink" >
 
         <Image x:Name="Img_Background" HorizontalAlignment="left" Width="1543" Source="images/GameBackground.jpg" RenderTransformOrigin="0.448,0.457" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="-510,-3405,-1033,-3365" Grid.ColumnSpan="6" Grid.RowSpan="6"/>
 

@@ -10,7 +10,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
-using Windows.UI.Xaml.Shapes;
+using Windows.UI.Xaml.Resources;
 
 namespace MemoryGame
 {
@@ -19,6 +19,7 @@ namespace MemoryGame
         //Used for images in game
         Random a = new Random();
         BitmapImage Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8;
+
         
 
 
@@ -30,6 +31,8 @@ namespace MemoryGame
         private int[,] board = new int[4, 4];
         private List<int> matches = new List<int>();
         private Random random = new Random((int)DateTime.Now.Ticks);
+
+        public ImageSource Source { get; set; }
 
 
         public Brush Background { get; set; }
@@ -46,40 +49,39 @@ namespace MemoryGame
             switch (choice)
             {
                 case 1:
-                    Path img1 = new Path();
-                    Img1 = new BitmapImage(new Uri("ms-appx:///images/ariel.png", UriKind.RelativeOrAbsolute));
+                    Image img1 = new Image();
+                    img1.Source = new BitmapImage(new Uri("ms-appx:///images/ariel.png"));
                     return img1;             
                 case 2:
-                    Path img2 = new Path();
-                    Img2 = new BitmapImage(new Uri("ms-appx:///images/belle.jpg"));
+                    Image img2 = new Image();
+                    img2.Source = new BitmapImage(new Uri("ms-appx:///images/belle.jpg"));
                     return img2; ;
                 case 3:
-                    Path img3 = new Path();
-                    Img3 = new BitmapImage(new Uri("ms-appx:///images/cinderella.jpg"));
+                    Image img3 = new Image();
+                    img3.Source = new BitmapImage(new Uri("ms-appx:///images/cinderella.jpg"));
                     return img3;
                 case 4:
-                    Path img4 = new Path();
-                    Img4 = new BitmapImage(new Uri("ms-appx:///images/elsajpg"));
+                    Image img4 = new Image();
+                    img4.Source = new BitmapImage(new Uri("ms-appx:///images/elsajpg"));
                     return img4;
                 case 5:
-                    Path img5 = new Path();
-                    Img5 = new BitmapImage(new Uri("ms-appx:///images/jasmin.jpg"));
+                    Image img5 = new Image();
+                    img5.Source = new BitmapImage(new Uri("ms-appx:///images/jasmin.jpg"));
 
                     return img5;
                 case 6:
-                    Path img6 = new Path();
-                    Img6 = new BitmapImage(new Uri("ms-appx:///images/mulan.jpg"));
+                    Image img6 = new Image();
+                    img6.Source = new BitmapImage(new Uri("ms-appx:///images/mulan.jpg"));
 
                     return img6;
                 case 7:
-                    Path img7 = new Path();
-                    Img7 = new BitmapImage(new Uri("ms-appx:///images/pochahontas.jpg"));
+                    Image img7 = new Image();
+                    img7.Source = new BitmapImage(new Uri("ms-appx:///images/pochahontas.jpg"));
 
                     return img7;
                 case 8:
-                    Path img8 = new Path();
-                    Img8 = new BitmapImage(new Uri("ms-appx:///images/snowWhite.jpg"));
-
+                    Image img8 = new Image();
+                     img8.Source = new BitmapImage(new Uri("ms-appx:///images/pochahontas.jpg"));
                     return img8;
                 default:
 
@@ -128,9 +130,9 @@ namespace MemoryGame
         private void addGrid(ref Grid grid, int row, int column)
         {
             Canvas canvas = new Canvas();
-            canvas.Height = 60;
-            canvas.Width = 60;
-            canvas.Background = Background;
+            canvas.Height = 100;
+            canvas.Width = 100;
+            canvas.Background = new SolidColorBrush(Colors.HotPink);
             canvas.Tapped += async (object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e) =>
             {
                 int selected;
@@ -147,7 +149,7 @@ namespace MemoryGame
                         first = canvas;
                         firstId = selected;
                         first.Children.Clear();
-                        first.Children.Add(card(selected));
+                        first.Children.Contains(card(selected));
                     }
                     else if ((secondId == 0))
                     {
