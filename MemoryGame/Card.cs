@@ -18,7 +18,8 @@ namespace MemoryGame
     {
         //Used for images in game
         Random a = new Random();
-        BitmapImage Img;
+        BitmapImage Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8;
+        
 
 
         private int turn = 0;
@@ -38,42 +39,53 @@ namespace MemoryGame
             IAsyncOperation<IUICommand> command = new MessageDialog(content, title).ShowAsync();
         }
 
+
         private UIElement card(int choice)
         {
-            PointCollection points = new PointCollection();
+            
             switch (choice)
             {
                 case 1:
-                    Img = new BitmapImage(new Uri("ms-appx:///images/ariel.png", UriKind.RelativeOrAbsolute));
-                
-                    break;
+                    Path img1 = new Path();
+                    Img1 = new BitmapImage(new Uri("ms-appx:///images/ariel.png", UriKind.RelativeOrAbsolute));
+                    return img1;             
                 case 2:
-                    Img = new BitmapImage(new Uri("ms-appx:///images/belle.jpg"));
-                    break;
+                    Path img2 = new Path();
+                    Img2 = new BitmapImage(new Uri("ms-appx:///images/belle.jpg"));
+                    return img2; ;
                 case 3:
-                    Img = new BitmapImage(new Uri("ms-appx:///images/cinderella.jpg"));
-                    break;
+                    Path img3 = new Path();
+                    Img3 = new BitmapImage(new Uri("ms-appx:///images/cinderella.jpg"));
+                    return img3;
                 case 4:
-                    Img = new BitmapImage(new Uri("ms-appx:///images/elsajpg"));
-                    break;
+                    Path img4 = new Path();
+                    Img4 = new BitmapImage(new Uri("ms-appx:///images/elsajpg"));
+                    return img4;
                 case 5:
-                    Img = new BitmapImage(new Uri("ms-appx:///images/jasmin.jpg"));
+                    Path img5 = new Path();
+                    Img5 = new BitmapImage(new Uri("ms-appx:///images/jasmin.jpg"));
 
-                    break;
+                    return img5;
                 case 6:
-                    Img = new BitmapImage(new Uri("ms-appx:///images/mulan.jpg"));
+                    Path img6 = new Path();
+                    Img6 = new BitmapImage(new Uri("ms-appx:///images/mulan.jpg"));
 
-                    break;
+                    return img6;
                 case 7:
-                    Img = new BitmapImage(new Uri("ms-appx:///images/pochahontas.jpg"));
+                    Path img7 = new Path();
+                    Img7 = new BitmapImage(new Uri("ms-appx:///images/pochahontas.jpg"));
 
-                    break;
+                    return img7;
+                case 8:
+                    Path img8 = new Path();
+                    Img8 = new BitmapImage(new Uri("ms-appx:///images/snowWhite.jpg"));
+
+                    return img8;
                 default:
-                    Img = new BitmapImage(new Uri("ms-appx:///images/snowWhite.jpg"));
-                    break;
-            }
 
-            return null;
+
+                    return null;
+            }
 
         }
 
