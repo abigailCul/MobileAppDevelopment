@@ -42,7 +42,7 @@ namespace MemoryGame
         private void Play_Game(object sender, RoutedEventArgs e)
         {
             Card.Background = ((Brush)App.Current.Resources["ApplicationSecondaryForegroundThemeBrush"]);
-            Card.New(Display);
+            Card.NewGame(Display);
         }
     }
 }

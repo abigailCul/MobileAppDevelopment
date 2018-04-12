@@ -10,7 +10,7 @@
     <Page.BottomAppBar>
         <AppBar IsOpen="True" IsSticky="True">
             <StackPanel Orientation="Vertical">
-                <AppBarButton Icon="Play" Label="Play Game" Click="Play_Game"/>
+                <AppBarButton Icon="Play" Label="Play Game" Click="Play_Game" Background="MediumPurple"/>
             </StackPanel>
         </AppBar>
     </Page.BottomAppBar>
@@ -19,26 +19,12 @@
 
         <Image x:Name="Img_Background" HorizontalAlignment="left" Width="1543" Source="images/GameBackground.jpg" RenderTransformOrigin="0.448,0.457" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="-510,-3405,-1033,-3365" Grid.ColumnSpan="6" Grid.RowSpan="6"/>
 
-       <Image x:Name="Card1_Click" Source="images/question.png" Grid.Row="0" Grid.Column="0" />
+        <Image x:Name="Card1_Click" Source="images/question.png" Grid.Row="0" Grid.Column="0" />
         <Image x:Name="Card2_Click" Source="images/question.png" Grid.Row="0" Grid.Column="1" />
         <Image x:Name="Card3_Click" Source="images/question.png" Grid.Row="0" Grid.Column="2" />
         <Image x:Name="Card4_Click" Source="images/question.png" Grid.Row="0" Grid.Column="3" />
 
-        <Image x:Name="Card5_Click" Source="images/question.png" Grid.Row="1" Grid.Column="0" />
-        <Image x:Name="Card6_Click" Source="images/question.png" Grid.Row="1" Grid.Column="1" />
-        <Image x:Name="Card7_Click" Source="images/question.png" Grid.Row="1" Grid.Column="2" />
-        <Image x:Name="Card8_Click" Source="images/question.png" Grid.Row="1" Grid.Column="3" />
-
-        <Image x:Name="Card9_Click" Source="images/question.png" Grid.Row="2" Grid.Column="0" />
-        <Image x:Name="Card10_Click" Source="images/question.png" Grid.Row="2" Grid.Column="1" />
-        <Image x:Name="Card11_Click" Source="images/question.png" Grid.Row="2" Grid.Column="2" />
-        <Image x:Name="Card12_Click" Source="images/question.png" Grid.Row="2" Grid.Column="3" />
-
-
-        <Image x:Name="Card13_Click" Source="images/question.png" Grid.Row="3" Grid.Column="0" />
-        <Image x:Name="Card14_Click" Source="images/question.png" Grid.Row="3" Grid.Column="1"/>
-        <Image x:Name="Card15_Click" Source="images/question.png" Grid.Row="3" Grid.Column="2" />
-        <Image x:Name="Card16_Click" Source="images/question.png" Grid.Row="3" Grid.Column="3" />
+        <TextBlock x:Name="tbl_Text" HorizontalAlignment="Center" Text="Ready to guess the Princess - Chose Play Game" Grid.ColumnSpan="4" Margin="-169,7,-180,-1483" Width="349" FontSize="15" FontStyle="Oblique" SelectionHighlightColor="Purple"/>
 
 
 
@@ -57,9 +43,7 @@
             <RowDefinition Height="437*"></RowDefinition>-->
 
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+
         </Grid.RowDefinitions>
 
 
