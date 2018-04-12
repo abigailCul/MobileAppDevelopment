@@ -51,6 +51,8 @@ namespace MemoryGame
                 case 1:
                     Image img1 = new Image();
                     img1.Source = new BitmapImage(new Uri("ms-appx:///images/ariel.png"));
+                    img1.Width = 100;
+                   img1.Height = 100;
                     return img1;             
                 case 2:
                     Image img2 = new Image();
@@ -149,7 +151,7 @@ namespace MemoryGame
                         first = canvas;
                         firstId = selected;
                         first.Children.Clear();
-                        first.Children.Contains(card(selected));
+                        first.Children.Add(card(selected));
                     }
                     else if ((secondId == 0))
                     {
