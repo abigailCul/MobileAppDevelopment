@@ -19,6 +19,9 @@ public class Card
 
     public Brush Background { get; set; }
 
+    /*
+     * Variables for grid
+     * */
     private int turn = 0;
     private int firstChoice = 0;
     private int secondChoice = 0;
@@ -108,7 +111,7 @@ public class Card
         Grid.Children.Clear();
         Grid.ColumnDefinitions.Clear();
         Grid.RowDefinitions.Clear();
-        // Setup 4x4 Grid
+        // Setup 4x4 Grid 16 boxes
         for (int Index = 0; (Index <= 3); Index++)
         {
             Grid.RowDefinitions.Add(new RowDefinition());
